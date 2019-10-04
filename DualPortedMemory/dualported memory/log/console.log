@@ -1,0 +1,607 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -work dualported_memory -2002  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Error: COMP96_0305: DPM.vhd : (55, 13): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: DPM.vhd : (55, 13): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work dualported_memory -2002  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -work dualported_memory -2002  $dsn/src/TestBench/dpm_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+SetActiveLib -work
+comp -include "$dsn\src\DPM.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+comp -include "$dsn\src\TestBench\dpm_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+asim +access +r TESTBENCH_FOR_dpm 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6316 kB (elbread=1023 elab2=4936 kernel=356 sdf=0)
+# KERNEL: ASDB file was created in location F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\wave.asdb
+#  9:23 PM, Sunday, May 27, 2018
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_dpm
+wave 
+wave -noreg clk
+wave -noreg cs1
+wave -noreg we1
+wave -noreg cs2
+wave -noreg we2
+wave -noreg ad1
+wave -noreg ad2
+wave -noreg d1
+wave -noreg d2
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\dpm_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_dpm 
+# 9 signal(s) traced.
+run @73ns
+# KERNEL: stopped at time: 73 ns
+acom -O3 -work dualported_memory -2002  $dsn/src/TestBench/dpm_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\DPM.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+comp -include "$dsn\src\TestBench\dpm_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim +access +r TESTBENCH_FOR_dpm 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6321 kB (elbread=1023 elab2=4940 kernel=356 sdf=0)
+# KERNEL: ASDB file was created in location F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\wave.asdb
+#  9:36 PM, Sunday, May 27, 2018
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_dpm
+wave 
+wave -noreg clk
+wave -noreg cs1
+wave -noreg we1
+wave -noreg cs2
+wave -noreg we2
+wave -noreg ad1
+wave -noreg ad2
+wave -noreg d1
+wave -noreg d2
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\dpm_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_dpm 
+# 9 signal(s) traced.
+# 1 signal(s) traced.
+run @73ns
+# KERNEL: stopped at time: 73 ns
+endsim
+#  Simulation has been stopped
+acom -O3 -work dualported_memory -2002  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Warning: COMP96_0564: DPM.vhd : (44, 8): Shared variable is not of a protected type. (IEEE Std 1076-2002, 4.3.1.3)
+# Error: COMP96_0123: DPM.vhd : (56, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (56, 9): Object "mem" may not be written
+# Error: COMP96_0123: DPM.vhd : (68, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (68, 9): Object "mem" may not be written
+# Compile failure 4 Errors 1 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work dualported_memory -2002  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Warning: COMP96_0564: DPM.vhd : (45, 8): Shared variable is not of a protected type. (IEEE Std 1076-2002, 4.3.1.3)
+# Error: COMP96_0123: DPM.vhd : (57, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (57, 9): Object "mem" may not be written
+# Error: COMP96_0123: DPM.vhd : (69, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (69, 9): Object "mem" may not be written
+# Compile failure 4 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work dualported_memory -2002  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Warning: COMP96_0564: DPM.vhd : (45, 8): Shared variable is not of a protected type. (IEEE Std 1076-2002, 4.3.1.3)
+# Error: COMP96_0123: DPM.vhd : (57, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (57, 9): Object "mem" may not be written
+# Error: COMP96_0123: DPM.vhd : (69, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (69, 9): Object "mem" may not be written
+# Compile failure 4 Errors 1 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work dualported_memory -2002  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Warning: COMP96_0564: DPM.vhd : (45, 8): Shared variable is not of a protected type. (IEEE Std 1076-2002, 4.3.1.3)
+# Error: COMP96_0123: DPM.vhd : (57, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (57, 9): Object "mem" may not be written
+# Error: COMP96_0123: DPM.vhd : (69, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (69, 9): Object "mem" may not be written
+# Compile failure 4 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work dualported_memory -2002  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Warning: COMP96_0564: DPM.vhd : (45, 8): Shared variable is not of a protected type. (IEEE Std 1076-2002, 4.3.1.3)
+# Error: COMP96_0123: DPM.vhd : (57, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (57, 9): Object "mem" may not be written
+# Error: COMP96_0123: DPM.vhd : (69, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (69, 9): Object "mem" may not be written
+# Compile failure 4 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work dualported_memory -2002  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Warning: COMP96_0564: DPM.vhd : (45, 8): Shared variable is not of a protected type. (IEEE Std 1076-2002, 4.3.1.3)
+# Error: COMP96_0419: DPM.vhd : (57, 24): Ambiguous reference to "unsigned". Visible declarations include 'ieee.std_logic_arith.unsigned' and 'ieee.NUMERIC_STD.unsigned'.
+# Error: COMP96_0123: DPM.vhd : (57, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (57, 9): Object "mem" may not be written
+# Error: COMP96_0272: DPM.vhd : (57, 24): Ambiguous reference to type "UNSIGNED".
+# Error: COMP96_0305: DPM.vhd : (57, 13): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: DPM.vhd : (57, 13): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0419: DPM.vhd : (60, 25): Ambiguous reference to "unsigned". Visible declarations include 'ieee.std_logic_arith.unsigned' and 'ieee.NUMERIC_STD.unsigned'.
+# Error: COMP96_0272: DPM.vhd : (60, 25): Ambiguous reference to type "UNSIGNED".
+# Error: COMP96_0305: DPM.vhd : (60, 14): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: DPM.vhd : (60, 14): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0419: DPM.vhd : (69, 24): Ambiguous reference to "unsigned". Visible declarations include 'ieee.std_logic_arith.unsigned' and 'ieee.NUMERIC_STD.unsigned'.
+# Error: COMP96_0123: DPM.vhd : (69, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (69, 9): Object "mem" may not be written
+# Error: COMP96_0272: DPM.vhd : (69, 24): Ambiguous reference to type "UNSIGNED".
+# Error: COMP96_0305: DPM.vhd : (69, 13): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: DPM.vhd : (69, 13): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0419: DPM.vhd : (72, 25): Ambiguous reference to "unsigned". Visible declarations include 'ieee.std_logic_arith.unsigned' and 'ieee.NUMERIC_STD.unsigned'.
+# Error: COMP96_0272: DPM.vhd : (72, 25): Ambiguous reference to type "UNSIGNED".
+# Error: COMP96_0305: DPM.vhd : (72, 14): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: DPM.vhd : (72, 14): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 20 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work dualported_memory -2002  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Warning: COMP96_0564: DPM.vhd : (45, 8): Shared variable is not of a protected type. (IEEE Std 1076-2002, 4.3.1.3)
+# Error: COMP96_0123: DPM.vhd : (57, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (57, 9): Object "mem" may not be written
+# Error: COMP96_0123: DPM.vhd : (69, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (69, 9): Object "mem" may not be written
+# Compile failure 4 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work dualported_memory -93  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Error: COMP96_0123: DPM.vhd : (57, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (57, 9): Object "mem" may not be written
+# Error: COMP96_0123: DPM.vhd : (69, 9): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: DPM.vhd : (69, 9): Object "mem" may not be written
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work dualported_memory -93  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work dualported_memory -2002  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Warning: COMP96_0564: DPM.vhd : (45, 8): Shared variable is not of a protected type. (IEEE Std 1076-2002, 4.3.1.3)
+# Compile success 0 Errors 1 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -work dualported_memory -2002  $dsn/src/TestBench/dpm_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\DPM.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Warning: COMP96_0564: DPM.vhd : (45, 8): Shared variable is not of a protected type. (IEEE Std 1076-2002, 4.3.1.3)
+# Compile success 0 Errors 1 Warnings  Analysis time :  63.0 [ms]
+comp -include "$dsn\src\TestBench\dpm_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim +access +r TESTBENCH_FOR_dpm 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6311 kB (elbread=1023 elab2=4939 kernel=348 sdf=0)
+# KERNEL: ASDB file was created in location F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\wave.asdb
+#  10:00 PM, Sunday, May 27, 2018
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_dpm
+wave 
+wave -noreg clk
+wave -noreg cs1
+wave -noreg we1
+wave -noreg cs2
+wave -noreg we2
+wave -noreg ad1
+wave -noreg ad2
+wave -noreg d1
+wave -noreg d2
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\dpm_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_dpm 
+# 9 signal(s) traced.
+run @73ns
+# KERNEL: stopped at time: 73 ns
+acom -O3 -work dualported_memory -2002  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Warning: COMP96_0564: DPM.vhd : (45, 8): Shared variable is not of a protected type. (IEEE Std 1076-2002, 4.3.1.3)
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work dualported_memory -93  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  79.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\DPM.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+comp -include "$dsn\src\TestBench\dpm_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim +access +r TESTBENCH_FOR_dpm 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6311 kB (elbread=1023 elab2=4939 kernel=348 sdf=0)
+# KERNEL: ASDB file was created in location F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\wave.asdb
+#  10:02 PM, Sunday, May 27, 2018
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_dpm
+wave 
+wave -noreg clk
+wave -noreg cs1
+wave -noreg we1
+wave -noreg cs2
+wave -noreg we2
+wave -noreg ad1
+wave -noreg ad2
+wave -noreg d1
+wave -noreg d2
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\dpm_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_dpm 
+# 9 signal(s) traced.
+# 1 signal(s) traced.
+run @73ns
+# KERNEL: stopped at time: 73 ns
+acom -O3 -work dualported_memory -93  $dsn/src/DPM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work dualported_memory -2002  $dsn/src/TestBench/dpm_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\DPM.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+comp -include "$dsn\src\TestBench\dpm_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  79.0 [ms]
+asim +access +r TESTBENCH_FOR_dpm 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6311 kB (elbread=1023 elab2=4939 kernel=348 sdf=0)
+# KERNEL: ASDB file was created in location F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\wave.asdb
+#  10:04 PM, Sunday, May 27, 2018
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_dpm
+wave 
+wave -noreg clk
+wave -noreg cs1
+wave -noreg we1
+wave -noreg cs2
+wave -noreg we2
+wave -noreg ad1
+wave -noreg ad2
+wave -noreg d1
+wave -noreg d2
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\dpm_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_dpm 
+# 9 signal(s) traced.
+# 1 signal(s) traced.
+run @73ns
+# KERNEL: stopped at time: 73 ns
+acom -O3 -work dualported_memory -2002  $dsn/src/TestBench/dpm_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\DPM.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+comp -include "$dsn\src\TestBench\dpm_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim +access +r TESTBENCH_FOR_dpm 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6311 kB (elbread=1023 elab2=4939 kernel=348 sdf=0)
+# KERNEL: ASDB file was created in location F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\wave.asdb
+#  10:15 PM, Sunday, May 27, 2018
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_dpm
+wave 
+wave -noreg clk
+wave -noreg cs1
+wave -noreg we1
+wave -noreg cs2
+wave -noreg we2
+wave -noreg ad1
+wave -noreg ad2
+wave -noreg d1
+wave -noreg d2
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\dpm_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_dpm 
+# 9 signal(s) traced.
+# 1 signal(s) traced.
+run @73ns
+# KERNEL: stopped at time: 73 ns
+SetActiveLib -work
+comp -include "$dsn\src\DPM.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\DPM.vhd
+# Compile Entity "DPM"
+# Compile Architecture "DPM" of Entity "DPM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+comp -include "$dsn\src\TestBench\dpm_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd
+# Compile Entity "dpm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "dpm_tb"
+# Compile Configuration "TESTBENCH_FOR_dpm"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim +access +r TESTBENCH_FOR_dpm 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6312 kB (elbread=1023 elab2=4939 kernel=348 sdf=0)
+# KERNEL: ASDB file was created in location F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\wave.asdb
+#  10:16 PM, Sunday, May 27, 2018
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_dpm
+wave 
+wave -noreg clk
+wave -noreg cs1
+wave -noreg we1
+wave -noreg cs2
+wave -noreg we2
+wave -noreg ad1
+wave -noreg ad2
+wave -noreg d1
+wave -noreg d2
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\dpm_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_dpm 
+# 9 signal(s) traced.
+# 1 signal(s) traced.
+run @73ns
+# KERNEL: stopped at time: 73 ns
+#  Simulation has been stopped
+# Adding file f:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\untitled.asdb ... Done
+# Adding file f:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\untitled.awc ... Done

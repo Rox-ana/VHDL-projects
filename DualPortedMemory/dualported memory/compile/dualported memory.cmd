@@ -1,0 +1,1 @@
+-w -s "F:\Active-HDL-Projects\DualPortedMemory\library.cfg"  -j "F:\Active-HDL-Projects\DualPortedMemory\dualported memory\projlib.cfg"  -d "F:\Active-HDL-Projects\DualPortedMemory\dualported memory\compile"   -work dualported_memory  -O3 -e 100 -2002 "F:\Active-HDL-Projects\DualPortedMemory\dualported memory\src\TestBench\dpm_TB.vhd" 

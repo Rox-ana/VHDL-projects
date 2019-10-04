@@ -1,0 +1,61 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=dualported_memory
+
+[Library]
+dualported_memory=.\dualported_memory.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+dualported_memory=.
+Active_lib=
+
+[Groups]
+TestBench=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=dpm_tb|testbench_for_dpm|1 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/DPM.vhd=-1
+TestBench/dpm_TB.vhd=-1
+TestBench/dpm_TB_runtest.do=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+
+[Files.Data]
+.\src\DPM.vhd=VHDL Source Code
+.\src\TestBench\dpm_TB.vhd=VHDL Test Bench
+.\src\TestBench\dpm_TB_runtest.do=Macro
+
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
